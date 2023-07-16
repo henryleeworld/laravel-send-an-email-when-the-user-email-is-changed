@@ -2,8 +2,8 @@
 
 namespace App\Observers;
 
-use App\Models\User;
 use App\Mail\UserChangedEmail;
+use App\Models\User;
 use Illuminate\Support\Facades\Mail;
 
 class UserObserver

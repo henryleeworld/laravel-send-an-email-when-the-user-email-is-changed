@@ -11,7 +11,7 @@
                 <div class="p-6 bg-white border-b border-gray-200">
 
                     <div class="overflow-hidden overflow-x-auto min-w-full align-middle sm:rounded-md">
-                        <table class="min-w-full divide-y divide-gray-200 border">
+                        <table class="w-full md:w-auto divide-y divide-gray-200 border">
                             <thead>
                             <tr>
                                 <th class="px-6 py-3 bg-gray-50">

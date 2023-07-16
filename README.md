@@ -1,4 +1,4 @@
-# Laravel 9 更改使用者電子郵件時發送電子郵件
+# Laravel 10 更改使用者電子郵件時發送電子郵件
 
 如果你在給定模型上監聽多個事件，你可以使用觀察者來組織你的所有監聽器到單一個類別。觀察者類別有個方法名稱，會反射你想監聽的 `Eloquent` 事件。這些方法中的每一個都會接收模型作為它們的參數。
 
@@ -16,13 +16,17 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
-- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移，並執行資料庫填充（如果要測試的話）。
 ```sh
-$ php artisan migrate
+$ php artisan migrate --seed
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
@@ -31,8 +35,8 @@ $ npm install && npm run dev
 
 ----
 ## 畫面截圖
-![](https://i.imgur.com/SHBKxG0.png)
+![](https://i.imgur.com/C7Yfjap.png)
 > 要註冊一個觀察者，在使用者的模型上使用觀察方法
 
-![](https://i.imgur.com/7356JOw.png)
+![](https://i.imgur.com/q3cFI8P.png)
 > 更改使用者電子郵件時接送電子郵件
