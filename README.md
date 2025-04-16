@@ -1,4 +1,4 @@
-# Laravel 10 更改使用者電子郵件時發送電子郵件
+# Laravel 11 更改使用者電子郵件時發送電子郵件
 
 如果你在給定模型上監聽多個事件，你可以使用觀察者來組織你的所有監聽器到單一個類別。觀察者類別有個方法名稱，會反射你想監聽的 `Eloquent` 事件。這些方法中的每一個都會接收模型作為它們的參數。
 
@@ -35,8 +35,8 @@ $ npm run build
 
 ----
 ## 畫面截圖
-![](https://i.imgur.com/C7Yfjap.png)
+![](https://i.imgur.com/Vk0N2wF.png)
 > 要註冊一個觀察者，在使用者的模型上使用觀察方法
 
-![](https://i.imgur.com/q3cFI8P.png)
+![](https://i.imgur.com/IXBTdGB.png)
 > 更改使用者電子郵件時接送電子郵件
